@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tank1990</title>
+</head>
+<body>
+<div style="border: 1px solid black; height: 190px; width: 190px; background-color: white;">
+
+    <img id="tank"
+         src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/02171059/tank.png"
+         style="position: relative;
+         top: 0px; left: 0px;"
+         width="19"
+         height="19">
+</div>
+<br>
+
+
+
+<table>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" id="up" name="up" value="&uarr;" onclick="mUp()">
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" id="left" name="left" value="&larr;" onclick="mLeft()">
+        </td>
+        <td></td>
+        <td>
+            <input type="button" id="right" name="right" value="&rarr;" onclick="mRight()">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" id="down" name="down" value="&darr;" onclick="mDow()">
+        </td>
+        <td></td>
+    </tr>
+</table>
+</body>
+<script>
+    let img=document.getElementById('tank')
+
+    function mUp() {
+        img.style.top = parseInt(img.style.top) - 19 + 'px';
+    }
+    function mLeft() {
+        img.style.left = parseInt(img.style.left) - 19 + 'px';
+    }
+    function mRight() {
+        img.style.left = parseInt(img.style.left) + 19 + 'px';
+    }
+    function mDow() {
+        img.style.top = parseInt(img.style.top) + 19 + 'px';
+    }
+
+
+</script>
+</html>
