@@ -59,33 +59,40 @@
 
     function mUp() {
         img1.style.top = parseInt(img1.style.top) - 19 + 'px';
-        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
-            img1.remove();
-            img2.remove();
+        if (parseInt(img1.style.left)>= parseInt(img2.style.left) && parseInt(img1.style.top)>= parseInt(img2.style.top) ) {
+            img1.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
+            img2.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
         }
     }
 
     function mLeft() {
         img1.style.left = parseInt(img1.style.left) - 19 + 'px';
-        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
-            img1.remove();
-            img2.remove();
+        if (parseInt(img1.style.left)>= parseInt(img2.style.left) && parseInt(img1.style.top)>= parseInt(img2.style.top) ) {
+            img1.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
+            img2.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
         }
     }
 
     function mRight() {
         img1.style.left = parseInt(img1.style.left) + 19 + 'px';
-        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
-            img1.remove();
-            img2.remove();
+        console.log(' left của tank:',img1.style.left)
+        console.log('left boom',img2.style.left)
+        //check tọa độ tank
+        console.log(' check:',parseInt(img1.style.left)>=parseInt(img2.style.left))
+        if (parseInt(img1.style.left)>= parseInt(img2.style.left) && parseInt(img1.style.top)>= parseInt(img2.style.top) )
+        //chuyển tọa độ từ chuỗi thành số
+        {
+            img1.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
+            img2.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
+
         }
     }
 
     function mDow() {
         img1.style.top = parseInt(img1.style.top) + 19 + 'px';
-        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
-            img1.remove();
-            img2.remove();
+        if (parseInt(img1.style.left)>= parseInt(img2.style.left) && parseInt(img1.style.top)>= parseInt(img2.style.top) ) {
+            img1.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
+            img2.src='https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175504/explosion.png';
         }
     }
 
