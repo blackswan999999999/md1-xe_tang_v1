@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>tank1990</title>
+    <title>tank1990 v2</title>
 </head>
 <body>
 <div style="border: 1px solid black; height: 190px; width: 190px; background-color: white;">
@@ -10,12 +10,20 @@
     <img id="tank"
          src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/02171059/tank.png"
          style="position: relative;
-         top: 0px; left: 0px;"
+         top: 0px; left: 0px;background-size: 100% 100%"
          width="19"
          height="19">
-</div>
-<br>
+    <img src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175453/boom.png"
+         id="boom"
+         style="position: relative;
+         top:95px;left: 95px; background-size: 100% 100%"
+         width="19"
+         height="19"
+    >
 
+</div>
+
+<br>
 
 
 <table>
@@ -45,19 +53,40 @@
 </table>
 </body>
 <script>
-    let img=document.getElementById('tank')
+    let img1 = document.getElementById('tank')
+    let img2 = document.getElementById('boom')
+
 
     function mUp() {
-        img.style.top = parseInt(img.style.top) - 19 + 'px';
+        img1.style.top = parseInt(img1.style.top) - 19 + 'px';
+        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
+            img1.remove();
+            img2.remove();
+        }
     }
+
     function mLeft() {
-        img.style.left = parseInt(img.style.left) - 19 + 'px';
+        img1.style.left = parseInt(img1.style.left) - 19 + 'px';
+        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
+            img1.remove();
+            img2.remove();
+        }
     }
+
     function mRight() {
-        img.style.left = parseInt(img.style.left) + 19 + 'px';
+        img1.style.left = parseInt(img1.style.left) + 19 + 'px';
+        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
+            img1.remove();
+            img2.remove();
+        }
     }
+
     function mDow() {
-        img.style.top = parseInt(img.style.top) + 19 + 'px';
+        img1.style.top = parseInt(img1.style.top) + 19 + 'px';
+        if (img1.style.top === img2.style.top && img1.style.left === img2.style.left) {
+            img1.remove();
+            img2.remove();
+        }
     }
 
 
